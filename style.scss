@@ -66,7 +66,7 @@
 						width: 30px;
 						height: 4px;
 						transition-duration: 75ms;
-						background-color: var(--primaryBlack);
+						background-color: #000;
 						display: block;
 
 						// transition: all 450ms linear;
@@ -91,7 +91,7 @@
 
 					&.active {
 						span {
-							background-color: var(--primaryWhite);
+							background-color: #fff;
 
 							&:nth-child(1) {
 								animation: hb_one 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -131,7 +131,7 @@
 						left: 0;
 						width: 100vw;
 						height: 100vh;
-						background: var(--primaryCTA);
+						background: black;
 						z-index: 99;
 					}
 

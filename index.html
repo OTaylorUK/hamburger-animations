@@ -1,31 +1,38 @@
-<div class="container main-container">
-	<div class="main-header">
-		<div class="logo-container">
-			<span>business logo</span>
-		</div>
-		<nav class="navigation-container">
-			<div class="navigation-wrapper">
-				<ul class="navigation">
-					<?php
-						for($x = 0; $x < $pagesLength; $x++) {
-							?>
-							<li id="<?php echo $pages[$x]; ?>"><a   href="<?php echo $pages[$x]; ?>"><?php echo ucfirst($pages[$x]); ?></a></li>
-							<?php
-						}
-					?>
-				</ul>
-			</div>
-
-			<div class="search-container">
-				<div class="item">
-					<img src="./assets/icons/search.svg" alt="">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="style.min.css">
+	<title>Document</title>
+</head>
+<body>
+		<div class="container main-container">
+				<div class="main-header">
+					<div class="logo-container">
+						<span>business logo</span>
+					</div>
+					<nav class="navigation-container">
+						<div class="navigation-wrapper">
+							<ul class="navigation">
+								<li>page link</li>
+								<li>page link</li>
+								<li>page link</li>
+								<li>page link</li>
+								<li>page link</li>
+							</ul>
+						</div>
+						<div class="hamburger-container">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</nav>
 				</div>
 			</div>
-			<div class="hamburger-container">
-				<span></span>
-				<span></span>
-				<span></span>
-			</div>
-		</nav>
-	</div>
-</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="main.min.js" type="text/javascript" charset="utf-8"></script>
+
+</body>
+</html>

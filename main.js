@@ -10,21 +10,23 @@ function scrollUpdate() {
 
 }
 
-// EVENT LISTENERS //
-$(document).on("click", '.hamburger-container', function (e) {
-	e.stopPropagation();
-	if ($(this).hasClass('active')) {
+$( document ).ready(function() {
+	// EVENT LISTENERS //
+	$(document).on("click", '.hamburger-container', function (e) {
+		e.stopPropagation();
+		if ($(this).hasClass('active')) {
 
-		$(this).addClass('animate-reverse');
-		$(this).removeClass('active');
-		$('.navigation-container').removeClass('active');
+			$(this).addClass('animate-reverse');
+			$(this).removeClass('active');
+			$('.navigation-container').removeClass('active');
 
 
-	} else {
-		$(this).removeClass('animate-reverse');
-		$(this).addClass('active');
-		$('.navigation-container').addClass('active');
+		} else {
+			$(this).removeClass('animate-reverse');
+			$(this).addClass('active');
+			$('.navigation-container').addClass('active');
 
-	}
+		}
 
+	});
 });
